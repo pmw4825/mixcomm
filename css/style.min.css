@@ -753,17 +753,35 @@ section {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px; } }
 
+
+
+
 @media (max-width: 767px) {
   .jumbotron h1 {
-    font-size: 6rem; }
+    font-size: 6rem; 
+  }
   .grid-item {
-    width: 100%; }
+    width: 100%; 
+  }
   .progress {
     height: 30px;
-    font-size: 16px; } }
+    font-size: 16px;
+  } 
+  .videos { 
+        display: flex;
+        flex-direction: column; /* 세로로 쌓도록 컨테이너 방향 설정 */
+        align-items: center; 
+        /* 모바일에서 컨테이너 너비를 100%로 설정하고 높이를 조정 */
+        width: 100%;
+        height: auto; /* 높이를 자동으로 조절하여 비디오의 종횡비 유지 */
+        size: 30%;
+      }
+  }
     .videos{
       display: flex;  /* Flexbox ���� */
-    }
+      
+      }
+    
     .btn {
     
       background-color:#e0004b;
