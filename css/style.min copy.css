@@ -3,7 +3,27 @@
  * https://gettemplates.co/roxy
  */
 
-
+ .button-block {
+  text-align: center;
+  margin-top: 20px;
+}
+.button {
+  display: block; /* 가로로 배치되는 대신 세로로 배치될 수 있도록 변경 */
+  padding: 5px 10px;
+  background-color: #FFCC3F; /* 버튼 배경색 */
+  color: black; /* 버튼 텍스트 색상 */
+  text-decoration: none;
+  margin: 10px auto; /* 버튼 간격 및 가운데 정렬 조정 */
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s; /* 효과 지속 시간 설정 */
+  width: 200px; /* 버튼 초기 가로 크기 */
+}
+.button:hover {
+  background-color: rgb(197, 97, 255); /* 마우스 호버 시 배경색 변경 */
+  width: 250px; /* 마우스 호버 시 가로 크기 변경 */
+}
 html, body {
   width: 100%;
   overflow-x: hidden; }
